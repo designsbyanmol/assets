@@ -13,7 +13,7 @@ $('.dba-nav a').on('click', function (e) {
 
 const dbaSkills = [
   "HTML", "CSS", "jQuery",
-  "Figma Layouts", "Figma Prototypes",
+  "Figma Layouts", "Figma Prototype",
   "WordPress", "Shopify", "HubSpot",
   "UX", "SEO", "Branding",
   "ClickUp", "Trello", "Jira"
