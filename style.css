@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Raleway";
-  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/fonts/Raleway.ttf")
+  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/assets/fonts/Raleway.ttf")
     format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-italic";
-  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/fonts/Raleway-Italic.ttf")
+  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/assets/fonts/Raleway-Italic.ttf")
     format("truetype");
   font-style: italic;
 }

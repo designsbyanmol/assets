@@ -116,7 +116,7 @@ $(document).ready(function () {
 
   // Fetch json
 
-  $.getJSON('https://raw.githubusercontent.com/designsbyanmol/portfolio/main/icons.json', function (data) {
+  $.getJSON('https://raw.githubusercontent.com/designsbyanmol/assets/JSON/icons.json', function (data) {
     const instaIcon = data.find(icon => icon.name === 'instagram');
     const linkedinIcon = data.find(icon => icon.name === 'linkedin');
     const gmailIcon = data.find(icon => icon.name === 'gmail');
