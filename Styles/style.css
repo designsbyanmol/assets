@@ -1,0 +1,644 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/fonts/Raleway.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-italic";
+  src: url("https://cdn.jsdelivr.net/gh/designsbyanmol/portfolio@main/assets/fonts/Raleway-Italic.ttf")
+    format("truetype");
+  font-style: italic;
+}
+
+:root {
+  --pc: #e74c3c;
+  --lpc: #9779df50;
+  --sc: #e67e22;
+  --lsc: #fbc2eb21;
+  --lc: #fda085;
+  --lwc: #ffffffec;
+  --wc: #fff;
+  --lbc: #24203810;
+  --bc: #242038;
+  --tc: #242038;
+  --lgc: #f4f4f4;
+  --gc: #a1a1a1;
+  --dgc: #585858;
+  --pcg: linear-gradient(45deg, var(--sc), var(--pc));
+  --scg: linear-gradient(45deg, var(--sc), var(--lc));
+  --red: #e74c3c;
+  --blue: #3498db;
+  --green: #2ecc71;
+  --yellow: #f1c40f;
+  --purple: #9b59b6;
+  --darkGreen: #1abc9c;
+  --orange: #e67e22;
+  --darkGrey: #34495e;
+  --grey: #7f8c8d;
+  --gradient-1: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  --gradient-2: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  --gradient-3: linear-gradient(45deg, #f6d365, #fda085);
+  --gradient-4: linear-gradient(45deg, #f39fdf, #e6dee9);
+  --gradient-5: linear-gradient(45deg, #769fe2, #c2e9fb);
+  --gradient-6: linear-gradient(45deg, #91b934, #96e6a1);
+  --gradient-7: linear-gradient(45deg, #33dd71, #8fd3f4);
+  --gradient-8: linear-gradient(45deg, #fccb90, #d57eeb);
+  --gradient-9: linear-gradient(45deg, #e0c3fc, #8ec5fc);
+  --gradient-10: linear-gradient(45deg, #f093fb, #f5576c);
+  --gradient-11: linear-gradient(45deg, #4facfe, #00f2fe);
+  --gradient-12: linear-gradient(45deg, #43e97b, #38f9d7);
+  --gradient-13: linear-gradient(45deg, #fa709a, #fee140);
+  --gradient-14: linear-gradient(45deg, #30cfd0, #330867);
+  --gradient-15: linear-gradient(45deg, #5ee7df, #b490ca);
+  --gradient-16: linear-gradient(45deg, #667eea, #764ba2);
+  --gradient-17: linear-gradient(45deg, #f7971e, #ffd200);
+  --gradient-18: linear-gradient(45deg, #e1eec3, #f05053);
+  --gradient-19: linear-gradient(45deg, #fc5c7d, #6a82fb);
+  --gradient-20: linear-gradient(45deg, #ffecd2, #fcb69f);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  scroll-behavior: smooth;
+  letter-spacing: 0.4px;
+  color: var(--tc);
+}
+
+svg path {
+  stroke: var(--bc);
+}
+
+.dba-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4rem 15px;
+}
+
+.dba-header {
+  color: var(--tc);
+  padding: 1rem 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.dba-logo svg {
+  max-height: 44px;
+  max-width: 44px;
+}
+
+.dba-header .dba-container {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: var(--lwc);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--lbc);
+  border: 1px solid var(--lgc);
+}
+
+.dba-header .dba-container nav {
+  padding-left: 20px;
+  border-left: 3px solid var(--lc);
+}
+
+.dba-header .dba-logo {
+  font-size: 16px;
+  margin: 0;
+}
+
+.dba-h_menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 0;
+  display: none;
+  transition: all 0.2s linear;
+}
+
+.dba-h_menu-icon:hover path {
+  stroke: var(--pc);
+}
+
+#dba-header .dba-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dba-nav a {
+  color: var(--tc);
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.2s linear;
+  position: relative;
+}
+
+.dba-nav a.active {
+  color: var(--pc);
+  font-weight: bold;
+}
+
+.dba-nav a:hover {
+  color: var(--pc);
+}
+
+.dba-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dba-hero .dba-container {
+  display: flex;
+  gap: 60px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dba-hero-text {
+  max-width: 600px;
+}
+
+.dba-hero-text h1 {
+  font-size: 46px;
+  line-height: 1.25;
+  color: var(--tc);
+  margin: 0 0 20px;
+}
+
+.dba-hero-text p {
+  font-size: 16px;
+  color: var(--dgc);
+  margin: 0 0 40px;
+  line-height: 1.5;
+}
+
+.dba-hero .dba-container img {
+  max-width: 400px;
+  height: auto;
+}
+
+.dba-cta-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background: var(--pc);
+  color: var(--wc);
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  transition: all 0.2s linear;
+}
+
+.dba-cta-btn:hover {
+  background: var(--sc);
+  color: var(--wc);
+  margin: 0 0 0 5px;
+}
+
+.dba-section h2 {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.dba-section h2:after {
+  position: absolute;
+  content: "";
+  left: calc(100% + 10px);
+  bottom: 0;
+  width: 20px;
+  height: 3px;
+  background: var(--pc);
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+#skills ul li {
+  border: 1px solid var(--lgc);
+  padding: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 8px;
+  background: var(--wc);
+  color: var(--tc);
+  min-height: 100px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+#skills ul li:hover {
+  background: transparent;
+  border: none;
+  color: var(--wc);
+  cursor: default;
+}
+
+#skills ul li:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#skills ul li:nth-child(1)::after {
+  background: var(--gradient-1);
+}
+#skills ul li:nth-child(2)::after {
+  background: var(--gradient-2);
+}
+#skills ul li:nth-child(3)::after {
+  background: var(--gradient-3);
+}
+#skills ul li:nth-child(4)::after {
+  background: var(--gradient-4);
+}
+#skills ul li:nth-child(5)::after {
+  background: var(--gradient-5);
+}
+#skills ul li:nth-child(6)::after {
+  background: var(--gradient-6);
+}
+#skills ul li:nth-child(7)::after {
+  background: var(--gradient-7);
+}
+#skills ul li:nth-child(8)::after {
+  background: var(--gradient-8);
+}
+#skills ul li:nth-child(9)::after {
+  background: var(--gradient-9);
+}
+#skills ul li:nth-child(10)::after {
+  background: var(--gradient-10);
+}
+#skills ul li:nth-child(11)::after {
+  background: var(--gradient-11);
+}
+#skills ul li:nth-child(12)::after {
+  background: var(--gradient-12);
+}
+#skills ul li:nth-child(13)::after {
+  background: var(--gradient-13);
+}
+#skills ul li:nth-child(14)::after {
+  background: var(--gradient-14);
+}
+#skills ul li:nth-child(15)::after {
+  background: var(--gradient-15);
+}
+#skills ul li:nth-child(16)::after {
+  background: var(--gradient-16);
+}
+#skills ul li:nth-child(17)::after {
+  background: var(--gradient-17);
+}
+#skills ul li:nth-child(18)::after {
+  background: var(--gradient-18);
+}
+#skills ul li:nth-child(19)::after {
+  background: var(--gradient-19);
+}
+#skills ul li:nth-child(20)::after {
+  background: var(--gradient-20);
+}
+#skills ul li:nth-child(21)::after {
+  background: var(--gradient-1);
+}
+#skills ul li:nth-child(22)::after {
+  background: var(--gradient-2);
+}
+#skills ul li:nth-child(23)::after {
+  background: var(--gradient-3);
+}
+#skills ul li:nth-child(24)::after {
+  background: var(--gradient-4);
+}
+#skills ul li:nth-child(25)::after {
+  background: var(--gradient-5);
+}
+#skills ul li:nth-child(26)::after {
+  background: var(--gradient-6);
+}
+#skills ul li:nth-child(27)::after {
+  background: var(--gradient-7);
+}
+#skills ul li:nth-child(28)::after {
+  background: var(--gradient-8);
+}
+#skills ul li:nth-child(29)::after {
+  background: var(--gradient-9);
+}
+#skills ul li:nth-child(30)::after {
+  background: var(--gradient-10);
+}
+
+.dba-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.dba-card {
+  background: var(--wc);
+  border: 1px solid var(--lgc);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.dba-card:hover {
+  transform: scale(1.03);
+}
+
+.dba-testimonials blockquote {
+  border-left: 4px solid var(--tc);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+#about .dba-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+#about .dba-container h2 {
+  margin: 0;
+  padding: 40px 40px 40px 0;
+  font-size: 77px;
+  line-height: 1.25;
+}
+
+#about .dba-container h2:after {
+  bottom: 0;
+  width: 80%;
+  left: 5px;
+  height: 50%;
+  border-radius: 0;
+  background: var(--gradient-2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#about p {
+  font-size: 24px;
+  line-height: 1.5;
+  position: relative;
+  color: var(--lgc); /* Dimmed base text */
+  display: inline-block;
+}
+
+#about p .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: pre-wrap;
+  color: transparent;
+  pointer-events: none;
+}
+
+#about p .overlay span {
+  opacity: 0;
+  color: var(--tc);
+  transition: opacity 0.5s ease;
+  display: inline-block;
+}
+
+#contact {
+  background: var(--lsc);
+}
+
+#contact .dba-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  padding: 0 15px;
+  align-items: center;
+}
+
+#contact .dba-container-in {
+  padding: 60px 0;
+  max-width: 500px;
+}
+
+#contact h2 {
+  font-size: 44px;
+  margin: 0 0 20px;
+  line-height: 1.25;
+  padding-top: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--dgc);
+}
+
+#contact h2:after {
+  left: 0;
+  right: 0;
+  width: auto;
+  top: 0;
+  background: var(--pc);
+}
+
+#contact .dba-form-wrap {
+  background: var(--wc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--lsc);
+  margin: 40px 0 40px 40px;
+}
+
+.dba-footer {
+  background: var(--bc);
+  color: var(--wc);
+  text-align: center;
+  padding: 2rem 15px;
+}
+
+.dba-footer a {
+  color: var(--lc);
+  margin: 0 3px;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: var(--lwc);
+  transition: all 0.3s linear;
+}
+
+.dba-footer .dba-container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.dba-footer p {
+  color: var(--wc);
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+.dba-footer a svg {
+  height: 18px;
+  width: 18px;
+}
+
+.dba-footer a svg path {
+  stroke: var(--bc);
+}
+
+.dba-footer a:hover {
+  scale: 1.1;
+}
+
+.dba-search {
+  margin-bottom: 1rem;
+}
+
+.dba-search input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 980px) {
+  .dba-hero .dba-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dba-hero-text {
+    text-align: center;
+  }
+
+  .dba-hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #about .dba-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact .dba-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  #contact .dba-form-wrap {
+    margin: 0 0 40px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dba-container {
+    padding: 2rem 15px;
+  }
+  .dba-h_menu-icon {
+    display: inline-block;
+  }
+
+  .dba-header .dba-container nav {
+    position: absolute;
+    border: none;
+    left: 15px;
+    padding: 15px;
+    right: 15px;
+    background: var(--wc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--lbc);
+    top: 100%;
+    transform: translateY(-50px);
+    z-index: -99999;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+
+  #dba-header .dba-container nav ul {
+    flex-direction: column;
+  }
+
+  .dba-header .dba-container {
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .dba-header .dba-container nav.active-nav {
+    transform: translateY(-0);
+    z-index: 1;
+    height: auto;
+    opacity: 1;
+  }
+
+  #about .dba-container {
+    gap: 20px;
+    padding: 40px 15px 80px;
+  }
+
+  #about .dba-container h2 {
+    padding: 0;
+    font-size: 44px;
+  }
+
+  #about p {
+    font-size: 18px;
+  }
+
+  #contact .dba-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #contact .dba-container-in {
+    padding: 30px 0 10px;
+  }
+
+  #contact .dba-form-wrap {
+    margin: 0 0 80px;
+    max-width: unset;
+  }
+}
