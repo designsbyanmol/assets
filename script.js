@@ -116,7 +116,7 @@ $(document).ready(function () {
 
   // Fetch json
 
-  $.getJSON('https://raw.githubusercontent.com/designsbyanmol/assets/icons.json', function (data) {
+  $.getJSON('https://cdn.jsdelivr.net/gh/designsbyanmol/assets/icons.json', function (data) {
     const instaIcon = data.find(icon => icon.name === 'instagram');
     const linkedinIcon = data.find(icon => icon.name === 'linkedin');
     const gmailIcon = data.find(icon => icon.name === 'gmail');
@@ -129,6 +129,7 @@ $(document).ready(function () {
     $('.dba-h_menu-icon').html(menuIcon.svg);
     $('.dba-logo i').html(logoIcon.svg);
   });
+
 
   $(document).on('click', '.dba-h_menu-icon', function () {
     $('.dba-nav').toggleClass('active-nav');
